@@ -1,0 +1,123 @@
+
+/*  Колір бекграунду хедера background: #FFFFFF; */
+/* Колір бек хиро та футера background: #2F303A; */
+/* Колір бек "чим ми займаємось" #F5F5F5 */
+/* Колір бек "наша команда"  #F5F4FA; */
+/* Основний колір заголовків #212121 */
+/* Основний колір параграфів  #757575; */
+/* Акцент  #2196F3; */
+/* Додатковий колір заголовку у хиро та у футері  #FFFFFF; */
+/* Додатковий колір у футері rgba(255, 255, 255, 0.6) */
+
+:root {
+    --color-primery: #212121;
+    --color-secondary: #757575;
+    --color-accent: #2196F3; 
+    --color-white-bgc: #FFFFFF;
+    --color-around-black-bgc: #2F303A;
+    --color-around-white-bgc: #F5F5F5;
+    --color-gray-bgc: #F5F4FA;
+    --color-additional: #FFFFFF;
+    --color-additional-second: rgba(255, 255, 255, 0.6);
+}
+
+/* Стилізація index.html */
+
+/* Header */
+
+.header {
+    background-color:var(--color-white-bgc) ;
+}
+
+.nav-link {
+    color: var(--color-primery);
+}
+
+.nav-link.current {
+    color: var(--color-accent)
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--color-accent);
+
+}
+
+.list {
+    list-style: none;
+}
+
+/* додати колір лого з двума кольорами */
+
+/* Section "Ефективні рішення для вашого бізнесу" */
+
+.hero {
+    background-color: var(--color-around-black-bgc);
+}
+
+.hero-title {
+    color: var(--color-additional);
+}
+
+.hero-sub {
+    color: var(--color-additional);
+    background-color: var(--color-accent);
+}
+
+/* Section "Наші переваги" */
+
+.features {
+    background-color: var(--color-around-white-bgc);
+}
+
+.features-caption {
+    color: var(--color-primery);
+}
+
+.features-sub {
+    color: var(--color-secondary);
+}
+
+/* Section "Чим ми займаємося" не подобається нейм класу, можливо треба змінити */
+
+.benefits {
+    background-color: var(--color-around-white-bgc);
+}
+
+.benefits-title {
+    color: var(--color-primery);
+}
+
+/* Section "Наша команда" */
+
+.staff {
+    background-color: var(--color-gray-bgc);
+}
+
+.staff-title {
+    color: var(--color-primery);
+}
+
+.staff-caption {
+    color: var(--color-primery);
+}
+
+.staff-sub {
+    color: var(--color-secondary);
+}
+
+/* Footer */
+
+.footer {
+    background-color: var(--color-around-black-bgc);
+}
+
+/* ADD LOGO IN 2 COLORS */
+
+.footer-adress {
+    color: var(--color-additional);
+}
+
+.footer-contact {
+    color: var(--color-additional-second);
+}
