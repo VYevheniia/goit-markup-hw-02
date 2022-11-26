@@ -27,6 +27,7 @@
 
 body {
     background-color: var(--color-around-white-bgc) ;
+    color: var(--color-primery);
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
 }
@@ -128,6 +129,8 @@ body {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
+
+    cursor: pointer;
 }
 
 .button:hover, 
@@ -139,7 +142,6 @@ body {
 
 
 .features-caption {
-    color: var(--color-primery);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -157,7 +159,7 @@ body {
 
 
 .works-title {
-    color: var(--color-primery);
+    
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -171,7 +173,7 @@ body {
 }
 
 .staff-title {
-    color: var(--color-primery);
+    
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -179,7 +181,7 @@ body {
 }
 
 .staff-caption {
-   color: var(--color-primery);
+   
    font-weight: 500;
    font-size: 16px;
    line-height: 1.19;
@@ -239,6 +241,8 @@ body {
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
+
+    cursor: pointer;
 }
 
 .main-button:hover,
