@@ -8,6 +8,7 @@
 /* Акцент  #2196F3; */
 /* Додатковий колір заголовку у хиро та у футері  #FFFFFF; */
 /* Додатковий колір у футері rgba(255, 255, 255, 0.6) */
+/* колір активної кнопки */
 
 :root {
     --color-primery: #212121;
@@ -19,35 +20,89 @@
     --color-gray-bgc: #F5F4FA;
     --color-additional: #FFFFFF;
     --color-additional-second: rgba(255, 255, 255, 0.6);
+    --color-button-accent: #188CE8;
 }
 
 /* Стилізація index.html */
 
-/* Header */
-
-.header {
-    background-color:var(--color-white-bgc) ;
-}
-
-.nav-link {
-    color: var(--color-primery);
-}
-
-.nav-link.current {
-    color: var(--color-accent)
-}
-
-.nav-link:hover,
-.nav-link:focus {
-    color: var(--color-accent);
-
+body {
+    background-color: var(--color-around-white-bgc) ;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
 }
 
 .list {
     list-style: none;
 }
 
-/* додати колір лого з двума кольорами */
+.visually-hidden {
+    position: absolute;
+        white-space: nowrap;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        margin: -1px;
+}
+
+
+
+/* Header */
+
+.header {
+    background-color: var(--color-white-bgc);
+}
+
+.logo {
+    color: var(--color-accent);
+    text-decoration: none;
+    font-family: raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.logo-sec-h {
+    color: var(--color-primery);
+}
+
+.nav.list a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+
+.nav-link.current {
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+.nav-link {
+    color: var(--color-primery);
+    text-decoration: none;
+}
+
+.contact-header {
+    color: var(--color-secondary);
+    text-decoration: none;
+}
+
+
+.nav-link:hover,
+.nav-link:focus,
+.contact-header:hover,
+.contact-header:focus {
+    color: var(--color-accent);
+}
+
+
+
 
 /* Section "Ефективні рішення для вашого бізнесу" */
 
@@ -57,35 +112,56 @@
 
 .hero-title {
     color: var(--color-additional);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
-.hero-sub {
+.button {
     color: var(--color-additional);
     background-color: var(--color-accent);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+}
+
+.button:hover, 
+.button:focus {
+    background-color: var(--color-button-accent);
 }
 
 /* Section "Наші переваги" */
 
-.features {
-    background-color: var(--color-around-white-bgc);
-}
 
 .features-caption {
     color: var(--color-primery);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
 }
 
 .features-sub {
     color: var(--color-secondary);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
 }
 
-/* Section "Чим ми займаємося" не подобається нейм класу, можливо треба змінити */
+/* Section "Чим ми займаємося" */
 
-.benefits {
-    background-color: var(--color-around-white-bgc);
-}
 
-.benefits-title {
+.works-title {
     color: var(--color-primery);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
 }
 
 /* Section "Наша команда" */
@@ -96,14 +172,27 @@
 
 .staff-title {
     color: var(--color-primery);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
 }
 
 .staff-caption {
-    color: var(--color-primery);
+   color: var(--color-primery);
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.19;
+   text-align: center;   
 }
+
 
 .staff-sub {
     color: var(--color-secondary);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
 }
 
 /* Footer */
@@ -112,12 +201,65 @@
     background-color: var(--color-around-black-bgc);
 }
 
-/* ADD LOGO IN 2 COLORS */
 
-.footer-adress {
+.logo-sec-f {
+    color: var(--color-additional) ;
+}
+
+
+.address {
+    font-family:'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+}
+
+.footer-address {
     color: var(--color-additional);
+    text-decoration: none; 
 }
 
 .footer-contact {
     color: var(--color-additional-second);
+    text-decoration: none;
+}
+
+/* Портфоліо */
+
+
+/* Кнопки */
+
+
+.main-button {
+    color: var(--color-primery);
+    background-color: var(--color-gray-bgc);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+}
+
+.main-button:hover,
+.main-button:focus {
+    color: var(--color-white-bgc);
+    background-color: var(--color-accent);
+}
+
+/* img */
+
+.main-title {
+    color: var(--color-primery);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.main-sub {
+    color: var(--color-secondary);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.9;
 }
