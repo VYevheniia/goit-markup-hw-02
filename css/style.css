@@ -26,7 +26,7 @@
 /* Стилізація index.html */
 
 body {
-    background-color: var(--color-around-white-bgc) ;
+    background-color: var(--color-white-bgc) ;
     color: var(--color-primery);
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
@@ -53,9 +53,6 @@ body {
 
 /* Header */
 
-.header {
-    background-color: var(--color-white-bgc);
-}
 
 .logo {
     color: var(--color-accent);
@@ -225,6 +222,13 @@ body {
 .footer-contact {
     color: var(--color-additional-second);
     text-decoration: none;
+}
+
+.footer-address:hover,
+.footer-address:focus,
+.footer-contact:hover,
+.footer-contact:focus {
+    color: var(--color-accent);
 }
 
 /* Портфоліо */
